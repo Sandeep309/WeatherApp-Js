@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,8 +11,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f96a3), to(#303e8f));
-  background: linear-gradient(#2f96a3, #303e8f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f96a3), to(#303e8f));
+  background-image: linear-gradient(#2f96a3, #303e8f);
 }
 
 .degree_Section {
