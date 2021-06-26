@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
             tempIcon.src = "./icons/clouds.svg";
           }
 
-          console.log(data);
+          // console.log(data);
         })
         .catch(() => {
           alert("Please search for a valid city 😩");
@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
 const searchBtn = document.querySelector(".searchBtn");
 searchBtn.addEventListener("click", () => {
   const searchValue = document.querySelector(".searchInput").value;
-  console.log(searchValue);
+  // console.log(searchValue);
 
   const searchApi = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${apiKey}`;
   fetch(searchApi)
