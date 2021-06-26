@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f96a3), to(#303e8f));
+  background: linear-gradient(#2f96a3, #303e8f);
+}
+
+.degree_Section {
+  cursor: pointer;
+}
+
+.searchInput::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.searchInput:-ms-input-placeholder {
+  color: #fff;
+}
+
+.searchInput::-ms-input-placeholder {
+  color: #fff;
+}
+
+.searchInput::placeholder {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
