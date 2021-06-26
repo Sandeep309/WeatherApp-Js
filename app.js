@@ -102,7 +102,7 @@ searchBtn.addEventListener("click", () => {
         tempIcon.src = "./icons/clouds.svg";
       }
 
-      console.log(data);
+      // console.log(data);
     })
     .catch(() => {
       alert("Please search for a valid city 😩");
