@@ -13,64 +13,68 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <figure class="container">
-      <!-- Search Bar -->
-      <header class="my-5 input-group border-bottom">
-        <!-- Search Input -->
-        <input
-          type="text"
-          class="
-            form-control
-            bg-transparent
-            text-light
-            searchInput
-            border-0
-            shadow-none
-          "
-          placeholder="Search Your City"
-        />
-        <!-- Search Button -->
-        <button
-          class="
-            btn btn-outline-light
-            bg-transparent
-            border-0
-            shadow-none
-            searchBtn
-          "
-        >
-          <i class="bi bi-search"></i>
-        </button>
-      </header>
-      <!-- Location And Weater icon -->
-      <div class="row">
-        <!-- Location -->
-        <div class="col-md-6 d-flex justify-content-center mb-3">
-          <h1 class="mylocation my-auto"></h1>
-        </div>
-        <!-- Weather Icon -->
-        <div class="col-md-6 d-flex justify-content-center">
-          <img
-            src=""
-            class="img-fluid tempIcon"
-            alt=""
-            style="max-width: 50%"
+    <header class="container-fluid p-2 text-center">
+      <h1>Weather Finder App</h1>
+    </header>
+    <div class="contentArea">
+      <figure class="container">
+        <!-- Search Bar -->
+        <header class="my-5 input-group ">
+          <!-- Search Input -->
+          <input
+            type="text"
+            class="
+              form-control
+              bg-transparent
+              text-light
+              searchInput
+              shadow-none
+            "
+            placeholder="Search Your City"
           />
+          <!-- Search Button -->
+          <button
+            type="submit"
+            class="
+              btn btn-outline-light
+              bg-transparent
+              shadow-none
+              searchBtn
+            "
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </header>
+        <!-- Location And Weater icon -->
+        <div class="row">
+          <!-- Location -->
+          <div class="col-md-6 d-flex justify-content-center mb-3">
+            <h1 class="mylocation my-auto"></h1>
+          </div>
+          <!-- Weather Icon -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src=""
+              class="img-fluid tempIcon"
+              alt=""
+              style="max-width: 50%"
+            />
+          </div>
         </div>
-      </div>
-      <!-- Temprature And Climate -->
-      <div class="row mt-5 temperature">
-        <!-- Temrature -->
-        <div class="col-12 d-flex justify-content-center">
-          <h1 class="fw-bold display-1 temprature"></h1>
-          <span class="gap-2 h2 celcius">&#176C</span>
+        <!-- Temprature And Climate -->
+        <div class="row mt-5 temperature">
+          <!-- Temrature -->
+          <div class="col-12 d-flex justify-content-center">
+            <h1 class="fw-bold display-1 temprature"></h1>
+            <span class="gap-2 h2 celcius">&#176C</span>
+          </div>
+          <!-- Climate -->
+          <div class="col-12 mt-5 d-flex justify-content-center">
+            <h2 class="climate"></h2>
+          </div>
         </div>
-        <!-- Climate -->
-        <div class="col-12 mt-5 d-flex justify-content-center">
-          <h2 class="climate"></h2>
-        </div>
-      </div>
-    </figure>
+      </figure>
+    </div>
 
     <!-- Scripts -->
     <script src="app.js"></script>
