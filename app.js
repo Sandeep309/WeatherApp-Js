@@ -4,9 +4,13 @@ const celcius = document.querySelector(".celcius");
 const climate = document.querySelector(".climate");
 const tempIcon = document.querySelector(".tempIcon");
 
+const waitingArea = document.querySelector(".waitingArea");
+const printArea = document.querySelector(".printArea");
 const apiKey = "632c8f68bce80284a9943e8a28aa9cc8";
 window.addEventListener("load", () => {
   const searchInput = document.querySelector(".searchInput");
+  printArea.style.display = "none";
+  waitingArea.style.display = "block";
   celcius.style.display = "none";
   searchInput.value = "";
   let long;
@@ -26,6 +30,8 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then((data) => {
+          printArea.style.display = "block";
+          waitingArea.style.display = "none";
           mylocation.textContent = data.name;
           temp.textContent = Math.round(data.main.feels_like - 273);
           celcius.style.display = "block";
@@ -67,6 +73,8 @@ window.addEventListener("load", () => {
 const searchBtn = document.querySelector(".searchBtn");
 searchBtn.addEventListener("click", () => {
   const searchValue = document.querySelector(".searchInput").value;
+  printArea.style.display = "none";
+  waitingArea.style.display = "block";
   // console.log(searchValue);
 
   const searchApi = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${apiKey}`;
@@ -75,6 +83,8 @@ searchBtn.addEventListener("click", () => {
       return response.json();
     })
     .then((data) => {
+      printArea.style.display = "block";
+      waitingArea.style.display = "none";
       mylocation.textContent = data.name;
       temp.textContent = Math.round(data.main.feels_like - 273);
       climate.textContent = data.weather[0].main;

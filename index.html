@@ -15,6 +15,7 @@
   <body>
     <header class="container-fluid p-2 text-center">
       <h1>Weather Finder App</h1>
+      <p>Give location permission or manualy search</p>
     </header>
     <div class="contentArea">
       <figure class="container">
@@ -45,7 +46,9 @@
             <i class="bi bi-search"></i>
           </button>
         </header>
-        <!-- Location And Weater icon -->
+        <h2 class="waitingArea text-center" style="display: none;">Searching please wait...</h2>
+        <div class="printArea">
+          <!-- Location And Weater icon -->
         <div class="row">
           <!-- Location -->
           <div class="col-md-6 d-flex justify-content-center mb-3">
@@ -72,6 +75,7 @@
           <div class="col-12 mt-5 d-flex justify-content-center">
             <h2 class="climate"></h2>
           </div>
+        </div>
         </div>
       </figure>
     </div>
